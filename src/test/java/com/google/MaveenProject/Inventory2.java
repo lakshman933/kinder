@@ -47,7 +47,7 @@ public class Inventory2 {
 		JavascriptExecutor jse =(JavascriptExecutor) driver;
 		jse.executeScript("window.scrollBy(0,800)");
 		
-		    Thread.sleep(3000);
+		 Thread.sleep(3000);
 		
 		obj.clickterminal();
 		obj.clicksub();

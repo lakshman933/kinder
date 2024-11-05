@@ -6,6 +6,7 @@ import org.openqa.selenium.JavascriptExecutor;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Wait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
@@ -13,6 +14,7 @@ import org.testng.annotations.Test;
 public class qutation2 {
 
 	
+	@SuppressWarnings("deprecation")
 	public static void main(String[] args)  {
 		// TODO Auto-generated method stub
 		WebDriver driver = new ChromeDriver();
@@ -21,10 +23,10 @@ public class qutation2 {
 		
 		quatation1 obj = new quatation1(driver);
 		obj.SendUsername("ecounter@gmail.com");
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		
 		obj.SendPassword("Admin@123");
 		obj.LoginButton();
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		
 		obj.clickqut();
 		obj.clickqutadd();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
